@@ -57,6 +57,24 @@ const WhyChooseUs = () => {
             </CardContent>
           </Card>
         </div>
+        
+        {/* Experience Section */}
+        <div className="mt-16 text-center">
+          <p className="text-muted-foreground mb-4">
+            Our founding engineers have served notable companies like:
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 text-lg font-semibold">
+            <span className="text-primary">Flutterwave</span>
+            <span className="text-muted-foreground">•</span>
+            <span className="text-primary">PiggyVest</span>
+            <span className="text-muted-foreground">•</span>
+            <span className="text-primary">Paga</span>
+            <span className="text-muted-foreground">•</span>
+            <span className="text-primary">Bet9ja</span>
+            <span className="text-muted-foreground">•</span>
+            <span className="text-primary">and many others</span>
+          </div>
+        </div>
       </div>
     </section>
   );
