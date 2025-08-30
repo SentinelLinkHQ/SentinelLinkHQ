@@ -1,13 +1,45 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import Contact from "@/components/Contact";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <main className="min-h-screen bg-background">
+      <Navigation />
+      <div id="home">
+        <Hero />
       </div>
-    </div>
+      <div id="services">
+        <Services />
+      </div>
+      <div id="why-us">
+        <WhyChooseUs />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
+      
+      {/* Footer */}
+      <footer className="bg-surface-subtle py-8 border-t border-border">
+        <div className="container mx-auto px-6 text-center">
+          <div className="mb-4">
+            <h3 className="text-lg font-bold bg-gradient-primary bg-clip-text text-transparent">
+              SentinelLinkHQ
+            </h3>
+          </div>
+          <p className="text-muted-foreground text-sm">
+            © 2024 SentinelLinkHQ. Professional Cybersecurity Services. All rights reserved.
+          </p>
+          <div className="mt-4 flex justify-center space-x-6 text-sm text-muted-foreground">
+            <span>Privacy Policy</span>
+            <span>Terms of Service</span>
+            <span>Security</span>
+          </div>
+        </div>
+      </footer>
+    </main>
   );
 };
 

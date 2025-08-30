@@ -61,7 +61,27 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom cybersecurity colors
+				cyber: {
+					blue: 'hsl(var(--cyber-blue))',
+					'blue-dark': 'hsl(var(--cyber-blue-dark))',
+					green: 'hsl(var(--cyber-green))',
+					purple: 'hsl(var(--cyber-purple))'
+				},
+				surface: {
+					elevated: 'hsl(var(--surface-elevated))',
+					subtle: 'hsl(var(--surface-subtle))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-dark': 'var(--gradient-dark)',
+				'gradient-cyber': 'var(--gradient-cyber)'
+			},
+			boxShadow: {
+				'cyber': 'var(--shadow-cyber)',
+				'elevated': 'var(--shadow-elevated)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
