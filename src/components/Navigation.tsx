@@ -19,7 +19,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              SentinelLinkHQ
+              Sentinel Link
             </h1>
           </div>
 

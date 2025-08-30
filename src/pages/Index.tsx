@@ -26,11 +26,11 @@ const Index = () => {
         <div className="container mx-auto px-6 text-center">
           <div className="mb-4">
             <h3 className="text-lg font-bold bg-gradient-primary bg-clip-text text-transparent">
-              SentinelLinkHQ
+              Sentinel Link
             </h3>
           </div>
           <p className="text-muted-foreground text-sm">
-            © 2024 SentinelLinkHQ. Professional Cybersecurity Services. All rights reserved.
+            © 2024 Sentinel Link. Professional Cybersecurity Services. All rights reserved.
           </p>
           <div className="mt-4 flex justify-center space-x-6 text-sm text-muted-foreground">
             <span>Privacy Policy</span>

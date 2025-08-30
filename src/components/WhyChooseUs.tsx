@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Why Choose <span className="bg-gradient-primary bg-clip-text text-transparent">SentinelLinkHQ</span>
+            Why Choose <span className="bg-gradient-primary bg-clip-text text-transparent">Sentinel Link</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             We leverage cutting-edge tools and methodologies to provide a thorough and actionable analysis of your security landscape.
