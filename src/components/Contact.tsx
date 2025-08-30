@@ -30,7 +30,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-medium text-foreground">Email</p>
-                      <p className="text-muted-foreground"> </p>
+                      <p className="text-muted-foreground"> - </p>
                     </div>
                   </div>
                   
