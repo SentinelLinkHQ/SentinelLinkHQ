@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import sentinelLogo from "@/assets/sentinel-link-logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +9,7 @@ const Navigation = () => {
   const navItems = [
     { label: "Home", href: "#home" },
     { label: "Services", href: "#services" },
-    { label: "Why Choose Us", href: "#why-us" },
+    { label: "Our Objectives", href: "#why-us" },
     { label: "Contact", href: "#contact" }
   ];
 
@@ -17,8 +18,9 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
-            <h1 className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+          <div className="flex items-center gap-3">
+            <img src={sentinelLogo} alt="Sentinel Link Logo" className="h-10 w-10" />
+            <h1 className="text-xl font-bold text-primary">
               Sentinel Link
             </h1>
           </div>
@@ -37,6 +39,7 @@ const Navigation = () => {
             <Button 
               className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-cyber"
               size="sm"
+              onClick={() => window.open('https://calendly.com/stillbigjosh/30min', '_blank')}
             >
               Get Quote
             </Button>
@@ -69,9 +72,10 @@ const Navigation = () => {
                   {item.label}
                 </a>
               ))}
-              <Button 
+               <Button 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-cyber mt-4"
                 size="sm"
+                onClick={() => window.open('https://calendly.com/stillbigjosh/30min', '_blank')}
               >
                 Get Quote
               </Button>

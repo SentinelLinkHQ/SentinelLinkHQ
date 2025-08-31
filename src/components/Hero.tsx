@@ -31,6 +31,7 @@ const Hero = () => {
           <Button 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-cyber font-semibold px-8 py-6 text-lg"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Get Security Assessment
           </Button>
@@ -38,6 +39,7 @@ const Hero = () => {
             variant="outline" 
             size="lg"
             className="border-primary/50 text-primary hover:bg-primary/10 font-semibold px-8 py-6 text-lg"
+            onClick={() => document.getElementById('why-us')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Learn More
           </Button>

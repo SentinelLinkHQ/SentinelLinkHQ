@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Phone, Globe, MessageCircle } from "lucide-react";
+import { Phone, MessageCircle } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -26,31 +26,11 @@ const Contact = () => {
                 <div className="space-y-6">
                   <div className="flex items-center gap-4 p-4 bg-card rounded-lg">
                     <div className="p-2 bg-primary/10 rounded-lg">
-                      <Mail className="w-5 h-5 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-medium text-foreground">Email</p>
-                      <p className="text-muted-foreground"> - </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-4 p-4 bg-card rounded-lg">
-                    <div className="p-2 bg-primary/10 rounded-lg">
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
                     <div>
                       <p className="font-medium text-foreground">Phone</p>
                       <p className="text-muted-foreground">+234 813 947 3744</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-4 p-4 bg-card rounded-lg">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      <Globe className="w-5 h-5 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-medium text-foreground">Website</p>
-                      <p className="text-muted-foreground">sentinellink.github.io</p>
                     </div>
                   </div>
                 </div>
@@ -69,15 +49,9 @@ const Contact = () => {
                     <Button 
                       className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-cyber font-semibold py-6"
                       size="lg"
+                      onClick={() => window.open('https://calendly.com/stillbigjosh/30min', '_blank')}
                     >
                       Request Security Assessment
-                    </Button>
-                    <Button 
-                      variant="outline" 
-                      className="w-full border-primary/50 text-primary hover:bg-primary/10 font-semibold py-6"
-                      size="lg"
-                    >
-                      Download Service Overview
                     </Button>
                   </div>
                 </div>
