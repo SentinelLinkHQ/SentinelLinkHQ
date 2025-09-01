@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, MessageCircle } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -21,39 +21,23 @@ const Contact = () => {
               <CardTitle className="text-2xl text-card-foreground">Contact Information</CardTitle>
             </CardHeader>
             <CardContent className="p-8">
-              <div className="grid md:grid-cols-2 gap-8">
-                {/* Contact Methods */}
-                <div className="space-y-6">
-                  <div className="flex items-center gap-4 p-4 bg-card rounded-lg">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      <Phone className="w-5 h-5 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-medium text-foreground">Phone</p>
-                      <p className="text-muted-foreground">+234 813 947 3744</p>
-                    </div>
-                  </div>
+              <div className="flex flex-col justify-center space-y-6 max-w-md mx-auto">
+                <div className="text-center">
+                  <MessageCircle className="w-12 h-12 text-primary mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Schedule a Consultation</h3>
+                  <p className="text-muted-foreground mb-6">
+                    Discuss your security requirements and get a customized assessment plan.
+                  </p>
                 </div>
                 
-                {/* Call to Action */}
-                <div className="flex flex-col justify-center space-y-6">
-                  <div className="text-center">
-                    <MessageCircle className="w-12 h-12 text-primary mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold text-foreground mb-2">Schedule a Consultation</h3>
-                    <p className="text-muted-foreground mb-6">
-                      Discuss your security requirements and get a customized assessment plan.
-                    </p>
-                  </div>
-                  
-                  <div className="space-y-3">
-                    <Button 
-                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-cyber font-semibold py-6"
-                      size="lg"
-                      onClick={() => window.open('https://calendly.com/stillbigjosh/30min', '_blank')}
-                    >
-                      Request Security Assessment
-                    </Button>
-                  </div>
+                <div className="space-y-3">
+                  <Button 
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-cyber font-semibold py-6"
+                    size="lg"
+                    onClick={() => window.open('https://calendly.com/stillbigjosh/30min', '_blank')}
+                  >
+                    Request Security Assessment
+                  </Button>
                 </div>
               </div>
             </CardContent>

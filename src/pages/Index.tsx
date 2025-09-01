@@ -30,7 +30,7 @@ const Index = () => {
             </h3>
           </div>
           <p className="text-muted-foreground text-sm">
-            © 2024 Sentinel Link. Business Registration: 1856748. Professional Cybersecurity Services. All rights reserved.
+            © 2024 Sentinel Link. Business Registration: 1856748. All rights reserved.
           </p>
           <div className="mt-4 flex justify-center space-x-6 text-sm text-muted-foreground">
             <span>Privacy Policy</span>
