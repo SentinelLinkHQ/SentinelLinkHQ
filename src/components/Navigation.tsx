@@ -10,6 +10,7 @@ const Navigation = () => {
     { label: "Home", href: "#home" },
     { label: "Services", href: "#services" },
     { label: "Our Objectives", href: "#why-us" },
+    { label: "Blog", href: "/blog" },
     { label: "Contact", href: "#contact" }
   ];
 
@@ -18,8 +19,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-3">
-            <img src={sentinelLogo} alt="Sentinel Link Logo" className="h-10 w-10" />
+          <div className="flex items-center">
             <h1 className="text-xl font-bold text-primary">
               Sentinel Link
             </h1>
@@ -28,13 +28,23 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-foreground hover:text-primary transition-colors font-medium"
-              >
-                {item.label}
-              </a>
+              item.href.startsWith('/') ? (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="text-foreground hover:text-primary transition-colors font-medium"
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="text-foreground hover:text-primary transition-colors font-medium"
+                >
+                  {item.label}
+                </a>
+              )
             ))}
             <Button 
               className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-cyber"

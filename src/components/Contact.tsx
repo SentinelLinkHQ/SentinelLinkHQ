@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MessageCircle } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
   return (
@@ -37,6 +38,16 @@ const Contact = () => {
                     onClick={() => window.open('https://calendly.com/stillbigjosh/30min', '_blank')}
                   >
                     Request Security Assessment
+                  </Button>
+                  
+                  <Button
+                    variant="outline"
+                    className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                    size="lg"
+                    onClick={() => window.open('https://x.com/SentinelLinkHQ', '_blank')}
+                  >
+                    <FaXTwitter className="w-5 h-5 mr-2" />
+                    Follow us on X
                   </Button>
                 </div>
               </div>
